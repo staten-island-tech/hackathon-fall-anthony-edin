@@ -2,6 +2,16 @@ import pygame
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
+from tkinter import *
+# root = Tk()
+
+
+# root.geometry("300x300")
+# bg = PhotoImage(file = "music_player_bg_image.png") 
+
+# # Display image 
+# canvas1.create_image( 0, 0, image = bg, anchor = "nw") 
+
 
 # Initialize Pygame mixer
 pygame.mixer.init()
@@ -9,6 +19,9 @@ pygame.mixer.init()
 # Create the main application window
 root = tk.Tk()
 root.title("Python Music Player")
+
+root.configure(bg='lightblue')
+root.geometry("300x300")
 
 # Initialize variables
 current_song = None
@@ -83,6 +96,9 @@ root.mainloop()
 
 # Different Version
 # -----------------------------------------------------------
+
+
+
 
 
 
