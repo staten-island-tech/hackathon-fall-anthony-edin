@@ -3,11 +3,11 @@ import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
 from tkinter import *
+from tkinter import PhotoImage
 # root = Tk()
 
 
 # root.geometry("300x300")
-# bg = PhotoImage(file = "music_player_bg_image.png") 
 
 # # Display image 
 # canvas1.create_image( 0, 0, image = bg, anchor = "nw") 
@@ -16,16 +16,27 @@ from tkinter import *
 # Initialize Pygame mixer
 pygame.mixer.init()
 
+
 # Create the main application window
 root = tk.Tk()
 root.title("Python Music Player")
 
+
+# image_path = PhotoImage(file = "file.png") 
+image_path = PhotoImage(file = "music_player_bg_image.png") 
+bg_image = tk.Label(root, image=image_path)
+bg_image.place(relheight=1, relwidth=1)
+
+
+
 root.configure(bg='lightblue')
-root.geometry("300x300")
+root.geometry("500x500")
+
 
 # Initialize variables
 current_song = None
 is_playing = False
+
 
 def play_music():
     global current_song, is_playing
@@ -94,8 +105,13 @@ root.mainloop()
 
 
 
+
+
+
 # Different Version
 # -----------------------------------------------------------
+
+
 
 
 
