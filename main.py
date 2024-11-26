@@ -81,19 +81,25 @@ def show_message(message):
 
 # Create buttons for controls
 load_button = tk.Button(root, text="Load", command=load_music)
-load_button.pack(pady=10)
+load_button.pack(pady=20)
+load_button.place(x=230, y=45)
 
 play_button = tk.Button(root, text="Play", command=play_music, state=tk.DISABLED)
-play_button.pack(pady=5)
+play_button.pack(pady=20)
+play_button.place(x=230, y=115)
 
 pause_button = tk.Button(root, text="Pause", command=pause_music, state=tk.DISABLED)
-pause_button.pack(pady=5)
+pause_button.pack(pady=20)
+pause_button.place(x=230, y=175)
 
 stop_button = tk.Button(root, text="Stop", command=stop_music, state=tk.DISABLED)
-stop_button.pack(pady=5)
+stop_button.pack(pady=20)
+stop_button.place(x=230, y=235)
 
 exit_button = tk.Button(root, text="Exit", command=root.quit)
-exit_button.pack(pady=10)
+exit_button.pack(pady=20)
+exit_button.place(x=230, y=305)
+
 
 # Run the Tkinter event loop
 root.mainloop()
